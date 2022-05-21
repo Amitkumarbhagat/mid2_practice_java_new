@@ -1,3 +1,10 @@
+// question: 4
+// Write an abstract class named Person and its two subclasses named Student and Employee.
+// A person has a name, address, phone number, and email address. A student has enrollment, 
+// course. An employee has an office, salary, and designation. Define constructors and methods for input 
+// and display for both classes. Write a main program to give demonstration of all.
+
+
 abstract class person {
     private String name;
     private String address;
@@ -64,7 +71,7 @@ class employee extends person {
         this.salary = salary;
         this.designation = designation;
     }
-
+    
 
     @Override
     public void display() {
@@ -85,8 +92,8 @@ public class que4 {
 
         s1.display();
 
-
         System.out.println("\n"+"\n");
+        
 //        for employee
         employee e1 = new employee("Walmart pvt ltd", 1200000l,"DevOps Engineer");
         e1.setName("xyz Bhagat");
